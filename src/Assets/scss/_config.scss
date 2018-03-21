@@ -1,0 +1,34 @@
+
+$black: #010000;
+$white: #ffffff;
+$lightGrey: #e6e6e6;
+$darkGrey: #333;
+$red: #ff1755;
+
+//mixins
+
+@mixin translateY($e){
+  -webkit-transform:translateY($e);
+  -moz-transform: translateY($e);
+    transform: translateY($e);
+}
+
+@mixin transition($e) {
+  -webkit-transition:$e;
+  -moz-transition:$e;
+    transition: $e;
+
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: $white;
+  font-weight: 400;
+  font-style: normal;
+}
